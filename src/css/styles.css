@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+:root {
+	--background: #181c23;
+	--color-white: #fff;
+	--color-primary: #a6f750;
+	--color-primary-contrast: #181c23;
+	--color-secondary-contrast: #e1e1e1;
+	--color-elementary: #2371ff;
+}
+
 body {
 	background-color: #181c23;
 }
@@ -28,7 +37,8 @@ header {
 }
 
 .logo {
-	max-width: 20%;
+	width: 64px;
+	height: 40px;
 }
 
 .menu-hamburger {
@@ -69,10 +79,9 @@ header {
 .menu {
 	width: 60px;
 	height: 60px;
-	/* margin: 1rem 1rem; */
+	margin: 1rem 1rem;
 	cursor: pointer;
 	display: none;
-	border: 1px solid red;
 }
 
 .hamburguer {
@@ -128,12 +137,67 @@ input:checked ~ .menu-hamburguer-elements {
 	left: 0;
 }
 
-.title {
-  font-size: 2.25rem;
+.section-initial {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 75px 40px;
 }
 
+.title {
+	font-size: 2.25rem;
+	color: var(--color-primary);
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 72px;
+}
 
-@media (max-width: 600px) {
+.title-p {
+	color: var(--color-white);
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 46px;
+}
+
+.container-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 0 40px;
+}
+
+.link-especialista {
+	padding: 16px 26px;
+	text-wrap: nowrap;
+	text-decoration: none;
+	font-size: 0.875rem;
+	color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+	border-radius: 4px;
+}
+
+.container-tech {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	background-color: var(--background);
+	border: none;
+	color: var(--color-white);
+	text-wrap: nowrap;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	
+}
+
+@media (max-width: 1024px) {
 	header {
 		height: 20%;
 	}
