@@ -509,7 +509,36 @@ input:checked ~ .menu-hamburguer-elements {
 	border: none;
 }
 
+.footer {
+	padding: 20px 30px;
+	margin-top: 20px;
+}
 
+.footer-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	gap: 5px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.footer-list :nth-child(n + 2)::before {
+	content: "| ";
+	font-size: 14px;
+	color: var(--color-white);
+}
+
+.footer-list li a {
+	color: var(--color-white);
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.copy {
+	font-size: 12px;
+	color: var(--color-white);
+}
 
 @media (max-width: 1024px) {
 	header {
