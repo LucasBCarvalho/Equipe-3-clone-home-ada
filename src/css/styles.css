@@ -365,6 +365,10 @@ input:checked~.menu-hamburguer-elements {
   color: var(--color-primary);
 }
 
+.about-text a {
+  color: var(--color-elementary);
+}
+
 .produtos {
   display: flex;
   flex-direction: column;
@@ -377,6 +381,46 @@ input:checked~.menu-hamburguer-elements {
 
 .produtos p {
   padding-top: 9px;
+}
+
+.section-form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 18px;
+}
+
+.title-form {
+  color: var(--color-white);
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.title-form strong {
+  font-weight: 700;
+}
+
+.title-form::after {
+  content: "";
+  display: block;
+  background: linear-gradient(to right,
+      var(--color-primary) 65%,
+      var(--color-elementary) 35%);
+  width: 100%;
+  height: 2px;
+  margin: 24px 0px;
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.form-text-p {
+  color: var(--color-white);
+  font-weight: 300;
+  line-height: 1.3;
 }
 
 @media (max-width: 1024px) {
