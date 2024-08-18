@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,13 @@
                 </div>
             </label>
 
-            <ul class="menu-hamburguer-elements show">
-                <li><a href="#">Produto</a></li>
+            <ul class="menu-hamburguer-elements show font-firacode">
+                <li><a class="selected" href="#">Produtos</a></li>
                 <li><a href="#">Plataforma</a></li>
                 <li><a href="#">Tecnologia</a></li>
                 <li><a href="#">Cases</a></li>
-                <li><a href="#">Para Alunos</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a class="link-green" href="#">Para Alunos</a></li>
+                <li><a class="link-login link-green" href="#">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -36,12 +36,13 @@
         <section class="section-initial">
             <div>
                 <h1 class="title font-ubuntu">Formação em tech para sua empresa.</h1>
-                <p class="title-p font-firacode">Utilize a educação como estratégia de recrutamento e redução <br> de
+                <p class="title-p font-firacode">Utilize a educação como estratégia de recrutamento e redução de
                     turnover.</p>
 
                 <div class="container-links">
                     <div>
-                        <a class="link-especialista font-firacode" href="#">Fale com um especialista</a>
+                        <a class="link-especialista font-firacode" href="#especialista-form">Fale com um
+                            especialista</a>
                     </div>
 
                     <div class="container-tech">
@@ -51,7 +52,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
             </div>
 
         </section>
@@ -75,8 +75,8 @@
                             alt="reskilling">
                     </div>
                 </div>
-
             </div>
+
             <div class="skills-two skills-block">
                 <h2 class="font-firacode text-skills-two">Education Recruiting</h2>
                 <div class="skills-img">
@@ -85,36 +85,40 @@
                 </div>
             </div>
         </div>
-        <section class="section-about">
-            <div class="main-text">
-                <h2 class="title-about font-ubuntu">Como funcionam os produtos Ada?</h2>
-                <p class="about-text font-firacode">Criamos três produtos educacionais para <span>resolver o déficit de
-                        empregabilidade no setor de
-                        tecnologia</span>. Com formações entre 4 e 12 meses, apresentamos estratégias gamificadas de
-                    recrutamento e retenção dos melhores talentos. Desenvolvemos uma engenharia de educação para <span>
-                        reduzir seu turnover e dores constantes de recrutamento</span>. Todos nossos produtos possuem
-                    avaliações técnicas e comportamentais customizáveis para as necessidades e tecnologias da sua
-                    empresa — com cerca de <span>100 módulos de formação síncrona e assíncrona</span>. Somos mais de
-                    <span>200 instrutores</span> e temos escala para atender seus principais desafios. <a
-                        href="#">Conheça</a> nossos cases de sucesso com as maiores empresas do Brasil e do mundo.
-                </p>
+    </main>
+
+    <section class="section-about">
+        <div class="main-text">
+            <h2 class="title-about font-ubuntu">Como funcionam os produtos Ada?</h2>
+            <p class="about-text font-firacode">Criamos três produtos educacionais para <span>resolver o déficit de
+                    empregabilidade no setor de
+                    tecnologia</span>. Com formações entre 4 e 12 meses, apresentamos estratégias gamificadas de
+                recrutamento e retenção dos melhores talentos. Desenvolvemos uma engenharia de educação para <span>
+                    reduzir seu turnover e dores constantes de recrutamento</span>. Todos nossos produtos possuem
+                avaliações técnicas e comportamentais customizáveis para as necessidades e tecnologias da sua
+                empresa — com cerca de <span>100 módulos de formação síncrona e assíncrona</span>. Somos mais de
+                <span>200 instrutores</span> e temos escala para atender seus principais desafios. <a
+                    href="#">Conheça</a>
+                nossos cases de sucesso com as maiores empresas do Brasil e do mundo.
+            </p>
+        </div>
+        <div class="produtos">
+            <div>
+                <img src="./src/imgs/icon-employer-branding.svg" alt="icon-employer-branding">
+                <p class="font-firacode">Employer<br>Branding</p>
             </div>
-            <div class="produtos">
-                <div>
-                    <img src="./src/imgs/icon-employer-branding.svg" alt="icon-employer-branding">
-                    <p class="font-firacode">Employer<br>Branding</p>
-                </div>
-                <div>
-                    <img src="./src/imgs/icon-treinamento-desenvolvimento.svg"
-                        alt="icon-treinamento-desenvolvimento.svg">
-                    <p class="font-firacode">Treinamento &<br>Desenvolvimento</p>
-                </div>
-                <div>
-                    <img src="./src/imgs/icon-esg.svg" alt="icon-esg">
-                    <p class="font-firacode">ESG</p>
-                </div>
+            <div>
+                <img src="./src/imgs/icon-treinamento-desenvolvimento.svg" alt="icon-treinamento-desenvolvimento.svg">
+                <p class="font-firacode">Treinamento &<br>Desenvolvimento</p>
             </div>
-        </section>
+            <div>
+                <img src="./src/imgs/icon-esg.svg" alt="icon-esg">
+                <p class="font-firacode">ESG</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="body-form">
         <section class="section-form">
             <div class="form-text">
                 <h1 class="title-form font-ubuntu">Leve para sua <strong>empresa!</strong></h1>
@@ -134,9 +138,11 @@
                     </button>
                 </div>
             </div>
+        </section>
 
-            <article>
-                <form class="form font-lato" action="">
+        <article>
+            <form id="especialista-form" class="form font-lato" action="">
+                <div class="input-container">
                     <div class="container-form">
                         <p class="input-p">Nome Completo</p>
                         <input class="input-form" type="text" placeholder="Digite seu nome">
@@ -154,7 +160,9 @@
                             <option value="Outro">
                         </datalist>
                     </div>
+                </div>
 
+                <div class="input-container">
                     <div class="container-form">
                         <p class="input-p">Empresa</p>
                         <input class="input-form" type="text" placeholder="Digite o nome da sua Empresa">
@@ -164,7 +172,9 @@
                         <p class="input-p">Email corporativo</p>
                         <input class="input-form" type="email" placeholder="email@email.com">
                     </div>
+                </div>
 
+                <div class="input-container">
                     <div class="container-form">
                         <p class="input-p">Telefone</p>
                         <input class="input-form" type="tel" placeholder="(71) 9 7777-7777">
@@ -181,11 +191,12 @@
                             <option value="Outro">
                         </datalist>
                     </div>
-                    <button class="talk-btn font-lato">Fale com um especialista</button>
-                </form>
-            </article>
-        </section>
-    </main>
+                </div>
+                <button class="talk-btn font-lato">Fale com um especialista</button>
+            </form>
+        </article>
+    </div>
+
 
     <footer class="footer font-firacode">
         <ul class="footer-list">
