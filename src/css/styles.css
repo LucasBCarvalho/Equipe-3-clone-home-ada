@@ -545,6 +545,7 @@ input:checked ~ .menu-hamburguer-elements {
   background-color: var(--color-primary);
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 .footer {
@@ -956,6 +957,7 @@ input:checked ~ .menu-hamburguer-elements {
 
   .form-btn {
     width: 70%;
+    cursor: pointer;
   }
 
   .form {
