@@ -783,6 +783,14 @@ input:checked ~ .menu-hamburguer-elements {
     font-size: 12px;
     font-weight: 500;
   }
+
+  .skills-block:nth-child(1):hover::after {
+    font-size: 16px;
+  }
+
+  .skills-block:nth-child(2):hover::after {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1440px) {
