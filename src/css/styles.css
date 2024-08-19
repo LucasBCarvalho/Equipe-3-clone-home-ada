@@ -502,6 +502,7 @@ input:checked ~ .menu-hamburguer-elements {
   outline: 1px solid transparent;
   caret-color: var(--color-white);
   transition: 0.3s;
+  color: var(--color-white);
 }
 
 .input-form::placeholder {
